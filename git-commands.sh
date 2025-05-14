@@ -1,10 +1,18 @@
 #!/bin/bash
-
 # Exit on any error
 set -e
 
-# Get current datestamp
-current_date=$(date '+%Y-%m-%d %H:%M:%S')
+# Check if commit message was provided as argument
+#
+#You have to input the message with "<message>"
+if [ $# -eq 0 ]; then
+    echo "Error: Please provide a commit message"
+    echo "Usage: $0 \"Your commit message\""
+    exit 1
+fi
+
+# Use the provided commit message
+commit_message="$1"
 
 # Execute git operations
 echo "Pulling latest changes..."
@@ -14,9 +22,9 @@ echo "Adding all changes..."
 git add .
 
 echo "Committing changes..."
-git commit -m "vault backup $current_date"
+git commit -m "$commit_message"
 
 echo "Pushing all branches..."
 git push origin --all
 
-echo "Vault backup completed successfully!"
+echo "Git operations completed successfully!"
