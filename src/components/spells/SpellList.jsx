@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSpells } from '../../hooks/useSpells';
+import { useSpells } from '../../hooks/spells/useSpells';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function SpellList() {

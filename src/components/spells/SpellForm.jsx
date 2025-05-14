@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useSpellForm } from '../../hooks/useSpellForm';
+import { useSpellForm } from '../../hooks/spells/useSpellForm';
 
 export default function SpellForm() {
   const { id } = useParams();

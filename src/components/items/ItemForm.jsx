@@ -1,5 +1,5 @@
 import React from 'react';
-import { useItemForm } from '../../hooks/useItemForm';
+import { useItemForm } from '../../hooks/items/useItemForm';
 
 export default function ItemForm({ itemId, onSave, onCancel }) {
   const {

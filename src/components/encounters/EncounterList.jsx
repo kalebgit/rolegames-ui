@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useEncounters } from '../../hooks/useEncounters';
+import { useEncounters } from '../../hooks/encounters/useEncounters';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function EncounterList({ onEncounterSelect, onCreateEncounter, onStartCombat }) {

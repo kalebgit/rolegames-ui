@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCharacterForm } from '../../hooks/useCharacterForm';
+import { useCharacterForm } from '../../hooks/characters/useCharacterForm';
 
 export default function CharacterForm({ characterId, onSave, onCancel }) {
   const {

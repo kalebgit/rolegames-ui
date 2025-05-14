@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNPCForm } from '../../hooks/useNPCForm';
+import { useNPCForm } from '../../hooks/npcs/useNPCForm';
 import { useNavigate, useParams } from 'react-router-dom';
 
 export default function NPCForm() {

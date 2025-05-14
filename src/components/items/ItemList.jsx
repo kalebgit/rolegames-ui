@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useItems } from '../../hooks/useItems';
+import { useItems } from '../../hooks/items/useItems';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function ItemList({ onItemSelect, onCreateItem }) {

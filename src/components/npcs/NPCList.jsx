@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNPCs } from '../../hooks/useNPCs';
+import { useNPCs } from '../../hooks/npcs/useNPCs';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function NPCList({ onNPCSelect, onCreateNPC }) {

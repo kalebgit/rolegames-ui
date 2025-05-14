@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCampaigns } from '../../hooks/useCampaigns';
+import { useCampaigns } from '../../hooks/campaigns/useCampaigns';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function CampaignList() {

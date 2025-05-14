@@ -1,7 +1,7 @@
 // src/components/characters/CharacterList.jsx (con React Router)
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCharacters } from '../../hooks/useCharacters';
+import { useCharacters } from '../../hooks/characters/useCharacters';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function CharacterList() {
