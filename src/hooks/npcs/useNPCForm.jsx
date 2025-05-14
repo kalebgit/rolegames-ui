@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const useNPCForm = (npcId, onSuccess) => {
+export default function useNPCForm  (npcId, onSuccess) {
   const [npc, setNpc] = useState({
     name: '',
     race: 'HUMAN',

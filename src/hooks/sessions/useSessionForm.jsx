@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const useSessionForm = (sessionId, onSuccess) => {
+export default function useSessionForm  (sessionId, onSuccess)  {
   const [session, setSession] = useState({
     sessionNumber: 1,
     date: '',

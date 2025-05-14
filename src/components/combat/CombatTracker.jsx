@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCombat } from '../../hooks/combat/useCombat';
+import  useCombat  from '../../hooks/combat/useCombat';
 import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../common/LoadingSpinner';
 

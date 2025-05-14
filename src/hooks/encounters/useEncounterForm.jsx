@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const useEncounterForm = (encounterId, onSuccess) => {
+export default function useEncounterForm  (encounterId, onSuccess)  {
   const [encounter, setEncounter] = useState({
     name: '',
     description: '',

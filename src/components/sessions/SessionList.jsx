@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSessions } from '../../hooks/sessions/useSessions';
+import  useSessions  from '../../hooks/sessions/useSessions';
 import LoadingSpinner from '../common/LoadingSpinner';
 
 export default function SessionList({ onSessionSelect, onCreateSession }) {

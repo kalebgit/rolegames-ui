@@ -1,6 +1,6 @@
 // Archivo: src/components/campaigns/CampaignForm.jsx (Router version actualizada)
 import React from 'react';
-import { useCampaignForm } from '../../hooks/campaigns/useCampaignForm';
+import  useCampaignForm  from '../../hooks/campaigns/useCampaignForm';
 import { useNavigate, useParams } from 'react-router-dom';
 
 export default function CampaignForm() {

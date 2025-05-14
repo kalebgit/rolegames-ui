@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEncounterForm } from '../../hooks/encounters/useEncounterForm';
+import  useEncounterForm  from '../../hooks/encounters/useEncounterForm';
 
 export default function EncounterForm({ encounterId, onSave, onCancel }) {
   const {

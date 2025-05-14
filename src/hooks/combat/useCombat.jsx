@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const useCombat = () => {
+export default function useCombat  ()  {
   const [combatState, setCombatState] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');

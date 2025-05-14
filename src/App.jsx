@@ -82,7 +82,7 @@ function LoginPage() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -275,4 +275,50 @@ function App() {
   );
 }
 
-export default App;
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+// // Componente de prueba simple
+// function TestComponent() {
+//   return (
+//     <div style={{ 
+//       padding: '20px', 
+//       backgroundColor: '#f0f0f0', 
+//       margin: '20px',
+//       borderRadius: '8px'
+//     }}>
+//       <h1>🎮 RoleGames Debug Test</h1>
+//       <p>Si ves esto, React está funcionando correctamente.</p>
+//       <p>Timestamp: {new Date().toLocaleString()}</p>
+//     </div>
+//   );
+// }
+
+// // Versión simplificada para debugging
+// function App() {
+//   console.log("🚀 App component is rendering...");
+  
+//   try {
+//     return (
+//       <Router>
+//         <div className="min-h-screen bg-gray-100">
+//           <TestComponent />
+//           <Routes>
+//             <Route path="/" element={<TestComponent />} />
+//             <Route path="*" element={<Navigate to="/" replace />} />
+//           </Routes>
+//         </div>
+//       </Router>
+//     );
+//   } catch (error) {
+//     console.error("❌ Error in App component:", error);
+//     return (
+//       <div style={{ padding: '20px', color: 'red' }}>
+//         <h1>Error en la aplicación</h1>
+//         <pre>{error.toString()}</pre>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;

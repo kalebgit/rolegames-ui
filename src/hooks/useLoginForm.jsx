@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios'
 
-export function useLoginForm(initialValue, onLoginSuccess){
+export default function useLoginForm(initialValue, onLoginSuccess){
     const [credentials, setCredentials] = useState({
         username: '', 
         password: ''
