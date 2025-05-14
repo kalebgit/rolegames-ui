@@ -5,5 +5,5 @@ module.exports = {
     theme: {
         extend: {}
     },
-    pulugins: [],
+    plugins: [],
 }

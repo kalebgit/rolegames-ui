@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import axios from 'axios'
 
 export function useLoginForm(intialValue, onLoginSuccess){
     const [credentials, setCredentials] = useState({
@@ -23,7 +24,7 @@ export function useLoginForm(intialValue, onLoginSuccess){
             const response = await axios.post('http://localhost:8080/api/auth/login', credentials)
             
             if (response.data.token){
-                localStorage.store('token', response.data.token)
+                localStorage.setItem('token', response.data.token)
                 setSuccess('Login exitoso!')
                 
                 axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`

@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+import { useEffect, useState} from "react"
+import axios from 'axios'
 
 export default function useAuth(){
     const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -24,7 +25,7 @@ export default function useAuth(){
             setUser(response.data)
             setIsAuthenticated(true)
         }catch(err){
-            console.error('Error fetching user data: ', error)
+            console.error('Error fetching user data: ', err)
             localStorage.removeItem('token')
             delete axios.defaults.headers.common['Authorization']
             setIsAuthenticated(false)
