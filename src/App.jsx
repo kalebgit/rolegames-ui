@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import LoginForm from './components/LoginForm';
 import useAuth from './hooks/useAuth'
 
 function App() {
-  const {isAuthenticated, user, loading, handleLogout} = useAuth()
+  const {isAuthenticated, user, loading, setUser, setIsAuthenticated, handleLogout} = useAuth()
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">

@@ -40,6 +40,6 @@ export default function useAuth(){
         setIsAuthenticated(false)
         setUser(null)
     }
-    return {isAuthenticated, user, loading, handleLogout}
+    return {isAuthenticated, user, loading, setUser, setIsAuthenticated,  handleLogout}
 }
 
